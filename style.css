@@ -17,6 +17,7 @@ body {
     grid-template-columns: 1.2fr 2fr;
     grid-template-rows: 1fr;
     grid-template-areas: "aside main";
+    overflow-x: hidden;
 }
 
 
@@ -46,13 +47,47 @@ body {
     padding: 2rem 2.4rem;
 }
 
-.container {
-    display: flex;
-    gap: 20px;
+.text-section {
+    border: 1px solid black;
+    width: clamp(35ch, 90%, 150ch);
+    font-size: 1rem;
 }
 
-.container > label > span {
+
+.text-section > p {
+    border: 1px solid black;
+}
+
+
+.input-container {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.input-container > label > span {
     display: block;
+}
+
+
+.input-container > label > input {
+    outline: none;
+    border: 1px solid lightslategray;
+    border-radius: 6px;
+    height: 33px;
+    width: calc(85vw/4);
+    min-width: 210px;
+}
+
+
+.input-container > label > input:valid {
+    outline: 2px solid lightgreen;
+}
+
+
+.input-container > label > input:focus {
+    outline: 1px solid #6643b5;
 }
 
 
