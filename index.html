@@ -6,6 +6,76 @@
     <link rel="stylesheet" href="style.css">
     <title>Form</title>
 </head>
-<body>
+<body> 
+
+    <aside class="aside">
+        <span id="img-autor">
+            Foto de <a href="https://unsplash.com/es/@kylejglenn?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kyle Glenn</a> en <a href="https://unsplash.com/es/fotos/libros-sobre-cubo-de-basura-verde-gcw_WWu_uBQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </span>
+    </aside>
+
+    <main class="main">
+
+        <section class="text-section">
+            <h1>Sing in for Free English Classes</h1>
+            <p>Hello, I'm glad that you end up here, I guess you want to learn English but don't know where to start, let me tell you that the best and easier way to learn anything is to make that action a habits, so by the time you are gonna realize how much you've learned without even thinking about that. The best habits to learn a new languages are to read and speak daily</p>
+        </section>
+
+        <section class="form-section">
+            <h3>Please fill the form</h3>
+            <form action="" method="post">
+
+                <p class="container names-container">
+
+                    <label for="first-name">
+                        <span>Name</span>
+                        <input type="text" id="first-name" name="user_first_name" placeholder="Alexander" required >
+                    </label>
+
+                    <label for="last-name">
+                        <span>Last Name</span>
+                        <input type="text" id="last-name" name="user_last_name" placeholder="Vielma" required>
+                    </label>
+
+                </p>
+
+                <p class="container contact-container">
+
+                    <label for="email">
+                        <span>Email</span>
+                        <input type="email" id="email" name="user_email" placeholder="e.g@gmail.com" required >
+                    </label>
+
+                    <label for="phone-number">
+                        <span>Phone number</span>
+                        <input type="tel" id="phone-number" name="user_phone_number" required>
+                    </label>
+
+                </p>
+
+                <p class="container pw-contaier">
+
+                    <label for="password">
+                        <span>Enter password</span>
+                        <input type="password" id="password" name="user_password" required >
+                    </label>
+
+                    <label for="confirm-pw">
+                        <span>Confirm password</span>
+                        <input type="password" id="confirm-pw" name="user_confirm_password" required>
+                    </label>
+                </p>
+
+                <p class="container summit-container">
+                    <button type="submit">Create Account</button>
+                </p>
+
+            </form>
+        </section>
+
+        <p>Already have an account? <a href="">Log in</a></p>
+        
+    </main>
+
 </body>
 </html>
