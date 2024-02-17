@@ -100,7 +100,7 @@ body {
 }
 
 
-.input-container > label > input {
+.input {
     padding-left: 9px;
     outline: none;
     border: 1px solid lightslategray;
@@ -111,14 +111,14 @@ body {
 }
 
 
-.input-container > label > input:valid {
+.input:valid {
     outline: 2px solid lightgreen;
 }
 
-
-.input-container > label > input:focus {
+.input:focus {
     outline: 1px solid #6643b5;
 }
+
 
 .submit {
     padding-top: 10px;
@@ -146,6 +146,12 @@ body {
     position: relative;
     left: 1px;
     top: 1px;
+}
+
+
+.last-txt {
+    font-family: 'Nunito', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 550;
 }
 
 
