@@ -6,13 +6,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
 
-    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Form</title>
 </head>
-<body> 
-
+<body>
     <aside class="aside">
         <span id="img-autor">
             Foto de <a href="https://unsplash.com/es/@kylejglenn?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kyle Glenn</a> en <a href="https://unsplash.com/es/fotos/libros-sobre-cubo-de-basura-verde-gcw_WWu_uBQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
@@ -60,27 +59,33 @@
 
                 <p class="input-container pw">
 
-                    <label for="password">
+                    <label for="password" class="password-label">
                         <span>Enter password</span>
-                        <input type="password" class="input" id="password" name="user_password" class="error" required >
+                        <input type="password" class="input" id="password" name="user_password" class="error" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" required>
+                        <i class="icon-container">
+                            <span class="material-symbols-outlined" id="password-icon">visibility_off</span>
+                        </i>
                     </label>
 
-                    <label for="confirm-pw">
+                    <label for="confirm-pw" class="password-label">
                         <span>Confirm password</span>
-                        <input type="password" class="input" id="confirm-pw" name="user_confirm_password" class="error" required>
+                        <input type="password" class="input" id="confirm-pw" name="user_confirm_password" class="error" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" required>
+                        <i class="icon-container">
+                            <span class="material-symbols-outlined" id="confirm-password-icon" >visibility_off</span>
+                        </i>
                     </label>
+
                 </p>
 
                 <p class="input-container submit">
                     <button type="submit" id="submit-btn">Create Account</button>
                 </p>
-
             </form>
         </section>
 
         <p class="last-txt">Already have an account? <a href="">Log in</a></p>
 
     </main>
-
 </body>
+<script src="script.js"></script>
 </html>

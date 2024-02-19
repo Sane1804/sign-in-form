@@ -119,12 +119,45 @@ body {
     outline: 1px solid #6643b5;
 }
 
+.input:invalid {
+    outline: 1px solid red;
+}
+
 
 .submit {
     padding-top: 10px;
     padding:10px;
     border-top: 2px double lightgray;
 }
+
+.password-label {
+    position: relative;
+}
+
+.icon-container{
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 4px;
+    bottom: 8px;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+    color:grey;
+    
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 250,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.material-symbols-outlined:hover {
+    color: black;
+}
+
 
 
 #submit-btn {
