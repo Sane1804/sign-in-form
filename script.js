@@ -44,30 +44,7 @@ bothIcons.forEach(icon => icon.addEventListener("click", (e) => {
     toggleEyeVisibility(e.target)
 }))
 
-
-let password = [];
-let confirmPassword = [];
-
-const getPasswordValues = (input) => {
-    if (input.target.getAttribute("id") == "password"){
-        if (password.length > 0){
-            password.pop()
-            password.push(input.target.value)
-        } else {
-            password.push(input.target.value)
-        }
-    } else {
-        if (confirmPassword.length > 0) {
-            confirmPassword.pop();
-            confirmPassword.push(input.target.value)
-        } else {
-            confirmPassword.push(input.target.value)
-        }
-    }
-} 
-
 PW_INPUTS.forEach(input => input.addEventListener("input", (e) => {
-   getPasswordValues(e);
    ERROR_SPAN.forEach(span => span.classList.remove("error"))
 }))
 
